@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        String List = sc.nextLine();
+
+        String[] names =List.split(" ");
+
+        String largest = names[0];
+
+        for(String s:names){
+            if(s.length()>largest.length()){
+                largest=s;
+            }
+        }
+        System.out.println(largest);
+    }
+}
