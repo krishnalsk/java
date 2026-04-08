@@ -1,0 +1,25 @@
+// If using a class, write your code in the 'Main' class
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Create a Scanner object to read input
+        Scanner sc = new Scanner(System.in);
+
+        // Read the year input from the user
+        int year = sc.nextInt();
+
+        // Check the leap year condition
+        // A year is a leap year if:
+        // 1. It is divisible by 4 AND NOT divisible by 100
+        // 2. OR it is divisible by 400
+        if((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0)) {
+            System.out.println(year + " is a leap year.");
+        } else {
+            System.out.println(year + " is not a leap year.");
+        }
+        
+        // Close the scanner (good practice)
+        sc.close();
+    }
+}
