@@ -1,0 +1,33 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input four integers
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+
+        // Assume the first number is the largest
+        int largest = a;
+
+        // Compare each subsequent number to the current largest
+        if (b > largest) {
+            largest = b;
+        }
+        if (c > largest) {
+            largest = c;
+        }
+        if (d > largest) {
+            largest = d;
+        }
+
+        // Print the result
+        System.out.println(largest + " is the Largest among 4");
+
+        // Close the scanner
+        sc.close();
+    }
+}
