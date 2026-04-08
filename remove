@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        String List=sc.nextLine();
+
+        String[] names =List.split(" ");
+
+        LinkedList<String> fruit = new LinkedList<>(Arrays.asList(names));
+        
+
+        String Remove = sc.nextLine();
+
+        fruit.remove(Remove);
+
+        System.out.println(fruit);
+    }
+}
