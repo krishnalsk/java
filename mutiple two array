@@ -1,0 +1,44 @@
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        int[] a= new int[n];
+        int[] b = new int[n];
+        int dout =0;
+
+        for(int i=0;i<n;i++){
+            a[i] =sc.nextInt();
+        }
+        for(int j=0;j<n;j++){
+            b[j]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++){
+            dout+=a[i]*b[i];
+        }
+
+        System.out.println(dout);
+    }
+}
+-------------------------------------------------------------------------------------
+public class mk {
+    public static void main(String[] args) {
+
+        int[] a = {1, 2, 3, 4, 5};
+        int[] b = {1, 2, 3, 4, 5};
+
+        int dout = 0;
+
+        System.out.println(a[1]);
+
+        // for (int i = 0; i < 5; i++) {
+        //     dout += a[i] * b[i];
+        // }
+
+        // System.out.println("Dot product = " + dout);
+    }
+}
+
