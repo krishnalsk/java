@@ -1,0 +1,20 @@
+class Solution {
+    public int[] sortArrayByParityII(int[] nums) {
+       int n =nums.length;
+       int[] result = new int[n];
+
+       int evenInx = 0;
+       int oddInx =1;
+
+       for(int x:nums){
+        if( x%2==0){
+            result[evenInx]=x;
+            evenInx+=2;
+        }else{
+            result[oddInx]=x;
+            oddInx +=2;
+        }
+       }
+       return result;
+    }
+}
