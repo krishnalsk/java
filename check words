@@ -1,0 +1,26 @@
+import java.util.*;
+
+// public static boolean chekwords(String s){
+//     s=s.trim();
+//     s=s.replace(" ","");
+//     return  s.mathes("[a-zA-Z]+");
+// }
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        String s=sc.nextLine();
+
+        if(chekwords(s)){
+            System.out.println("true");
+        }else{
+            System.out.println("false");
+        }
+    }
+    public static boolean chekwords(String s){
+    s=s.trim();
+    s=s.replace(" ","");
+    return s.matches("[a-zA-Z]+");
+    // return s.matches("[a-zA-Z]+");
+}
+}
