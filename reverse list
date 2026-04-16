@@ -1,0 +1,21 @@
+public class Main {                          // ✅ Fix 1: added 'class'
+    
+    public static void main(String[] args) { // ✅ Fix 4: added main method
+        int[] arr = {1, 2, 3, 4, 5};
+        int n = arr.length;
+        System.out.println(reverseList(n, arr));
+    }
+    
+    public static String reverseList(int n, int[] arr) {
+        StringBuilder result = new StringBuilder(); // ✅ Fix 2: correct spelling
+        
+        for(int i = n-1; i >= 0; i--) {
+            result.append(arr[i]);
+            
+            if(i != 0) {
+                result.append(" -> ");              // ✅ Fix 3: added spaces
+            }
+        }
+        return result.toString();
+    }
+}
